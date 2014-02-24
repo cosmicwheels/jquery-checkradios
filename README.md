@@ -237,7 +237,7 @@ $('.checkboxes-and-radios').checkradios({
 
 ```
 
-_Alternatively you can copy the contents of the style.css provided by icomoon and instead paste it into the jquery.checkradios.css file, replacing the icomoon section at the top (Make sure to set the paths properly to the font files, if overriding the default fonts add your font files to css/fonts within the plugin folder), this would allow you to skip "Step 3" listed above. If choosing to copy and paste into the query.checkradios.css file if you change the names of your icons to `.icon-checkradios-checkmark:before` and `.icon-checkradios-circle:before` this will override the default font classes which will allow you to also skip "Step 4" listed above_
+_Alternatively you can copy the contents of the style.css provided by icomoon and instead paste it into the jquery.checkradios.css file, replacing the icomoon section at the top (Make sure to set the paths properly to the font files, if overriding the default fonts add your font files to css/fonts within the plugin folder), this would allow you to skip "Step 3" listed above. If choosing to copy and paste into the query.checkradios.css file if you change the names of your icons to_ `.icon-checkradios-checkmark:before` _and_ `.icon-checkradios-circle:before` _this will override the default font classes which will allow you to also skip "Step 4" listed above_
 
 
 
