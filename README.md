@@ -136,7 +136,16 @@ The jquery.checkradios plugin supports all platforms that use class based font i
 ####Using FontAwsome Font Icons
 
 
+#####CSS
 
+Include the css for FontAwsome using their CDN:
+
+```html
+
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" href="<PATH-TO-PLUGIN>/jquery-checkradios/css/jquery.checkradios.min.css" type="text/css"/>
+
+```
 
 
 
