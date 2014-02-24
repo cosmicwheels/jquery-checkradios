@@ -128,6 +128,9 @@ _**Note:** You can also customise the styles using the_ `.checkradios-checkbox` 
 
 
 
+###Adding Custom Icons
+
+
 
 
 
