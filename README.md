@@ -44,7 +44,7 @@ Include the query.checkradios.min.css CSS in the head tag of your page
 
 ###Basic Setup
 
-To get started simple add the following to your _Javascript_:
+To get started simply add the following to your __Javascript__:
 
 ```javascript
 
@@ -56,7 +56,7 @@ $(document).ready(function(){
 
 ```
 
-Then add your checkboxes and/or radios within your _HTML_:
+Then add your checkboxes and/or radios within your __HTML__:
 
 ```html
 
