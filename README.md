@@ -304,7 +304,7 @@ By supplying an object as the options the following options are available:
 
 ##License
 
-   Code copyright 2014 Chris McGuckin  
+   Code Copyright 2014 Chris McGuckin  
    Licenced under GPL v3 [View License](LICENSE)  
 
 
