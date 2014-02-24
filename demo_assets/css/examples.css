@@ -1,0 +1,42 @@
+body{
+
+    font-family:Helvetica,Arial, sans-serif;
+
+}
+
+
+
+.label{
+
+    margin-bottom:10px;
+
+}
+
+.section{
+
+    margin-bottom:50px;
+
+
+}
+
+
+
+
+/*
+
+    Custom Input Styles
+	
+*/
+.custom{
+    
+	font-size:50px;
+    color:#6CF;
+	border:2px solid #6CF;
+	
+	-webkitbox-shadow:inset 0px 0.1em 0.1em rgba(0,0,0,0.3);
+	 -moz-box-shadow:inset 0px 0.1em 0.1em rgba(0,0,0,0.3);
+	   box-shadow:inset 0px 0.1em 0.1em rgba(0,0,0,0.3);
+	
+
+}
+
