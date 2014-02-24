@@ -65,6 +65,10 @@ Then add your checkboxes and/or radios within your __HTML__:
 
 ```
 
+This should be the __outcome__:
+
+![alt text](https://github.com/cosmicwheels/jquery-checkradios/blob/master/demo_assets/img/basic_example.jpg "Basic Setup")
+
 
 
 
