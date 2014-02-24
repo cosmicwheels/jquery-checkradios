@@ -18,7 +18,6 @@ This plugin uses custom icons provided by icomoon (icomoon.io) for its ticks and
 2. [Usage](#usage)
 3. [Installation](#installation)
 4. [Customizing](#customizing)
-
    [Custom Styles](#custom-styles)  
    [Custom Icons (FontAwsome)](#using-fontawsome-font-icons)  
    [Custom Icons (Icomoon)](#using-icomoon-font-icons)
