@@ -22,11 +22,6 @@ This plugin uses custom icons provided by icomoon (icomoon.io) for its ticks and
    [Custom Styles](#custom-styles)  
    [Custom Icons (FontAwsome)](#using-fontawsome-font-icons)  
    [Custom Icons (Icomoon)](#using-icomoon-font-icons)
-
-
-
-
-
 5. [Settings](#settings)
 6. [Credits](#credits)
 7. [License](#license)
