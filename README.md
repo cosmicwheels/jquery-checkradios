@@ -52,7 +52,7 @@ To get started simple add the following to your javascript:
 $('.checkradios').checkradios();
 
 ```
-**_Note: Make sure you add this javascript within a document ready function i.e $(document).ready();_**
+**Note: Make sure you add this javascript within a document ready function i.e $(document).ready();**
 
 ####HTML
 Then add your checkboxes and/or radios within your markup:
