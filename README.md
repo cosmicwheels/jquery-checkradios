@@ -15,11 +15,11 @@ This plugin uses custom icons provided by icomoon (icomoon.io) for its ticks and
 
 
 1. [Installation](#installation)
-2. [Usage](#installation)
-3. [Installation](#usage)
+2. [Usage](#usage)
+3. [Installation](#installation)
 4. [Customizing](#customizing)
-...[Adding Custom Styles](#adding-custom-styles)
-...[Adding Custom Icons](#adding-custom-icons)
+*[Adding Custom Styles](#adding-custom-styles)
+*[Adding Custom Icons](#adding-custom-icons)
 
 
 
