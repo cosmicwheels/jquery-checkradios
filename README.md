@@ -82,7 +82,7 @@ To add custom styling, create a css class like this:
 
 ```css
 
-.custom{
+.custom-style{
     
     font-size:50px;
     color:#6CF;
@@ -92,11 +92,31 @@ To add custom styling, create a css class like this:
     -moz-box-shadow:inset 0px 0.1em 0.1em rgba(0,0,0,0.3);
     box-shadow:inset 0px 0.1em 0.1em rgba(0,0,0,0.3);
 	
-
 }
 
 ```
 
+Then add the style to the inputs:
 
+```html
 
+<input type="checkbox" class="checkradios custom-style" checked/>
+<input type="radio" class="checkradios custom-style" checked/>
 
+```
+
+When you instantiate the plugin:
+
+```javascript
+
+$(document).ready(function(){
+
+    $('.checkradios').checkradios();
+
+});
+
+```
+
+This should be the __outcome__:
+
+![alt text](demo_assets/img/basic_example.jpg?raw=true "Basic Setup")
