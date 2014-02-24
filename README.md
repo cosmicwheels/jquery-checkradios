@@ -23,7 +23,7 @@ This plugin uses custom icons provided by icomoon (icomoon.io) for its ticks and
 4. [Customizing](#customizing)
 
    [Custom Styles](#custom-styles)  
-   [Custom Icons (FontAwsome)](#using-fontawsome-font-icons)  
+   [Custom Icons (FontAwesome)](#using-fontawesome-font-icons)  
    [Custom Icons (Icomoon)](#using-icomoon-font-icons)
 5. [Settings](#settings)
 6. [Credits](#credits)
@@ -152,15 +152,15 @@ _**Note:** You can also customise the styles using the_ `.checkradios-checkbox` 
 
 ###Custom Icons
 
-The jquery.checkradios plugin supports all platforms that use class based font icons such as [Icomoon](http://www.icomoon.io) and [FontAwsome](http://fortawesome.github.io/Font-Awesome/)
+The jquery.checkradios plugin supports all platforms that use class based font icons such as [Icomoon](http://www.icomoon.io) and [FontAwesome](http://fortawesome.github.io/Font-Awesome/)
 
 
-####Using FontAwsome Font Icons
+####Using FontAwesome Font Icons
 
 
 #####CSS
 
-Include the css for FontAwsome using their CDN:
+Include the css for FontAwesome using their CDN:
 
 ```html
 
@@ -180,7 +180,7 @@ Include the css for FontAwsome using their CDN:
 
 #####Javascript
 
-Get the name of the icon you want to use from [FontAwsome](http://fortawesome.github.io/Font-Awesome/icons/) and add it when instantiating the plugin like this:
+Get the name of the icon you want to use from [FontAwesome](http://fortawesome.github.io/Font-Awesome/icons/) and add it when instantiating the plugin like this:
 
 ```javascript
 
@@ -203,17 +203,17 @@ $('.checkboxes-and-radios').checkradios({
 
 ```
 
-_**Note:** Be sure to also add the "fa" FontAwsome class before the icon name you have chosen._
+_**Note:** Be sure to also add the "fa" FontAwesome class before the icon name you have chosen._
 
 This should be the __outcome__:
 
-![alt text](demo_assets/img/font_awsome_example.jpg?raw=true "Font Awsome Example")
+![alt text](demo_assets/img/font_awesome_example.jpg?raw=true "Font Awesome Example")
 
 
 
 ####Using Icomoon Font Icons
 
-[Icomoon](http://icomoon.io) is slightly trickier to set us as it requires downloading the fonts from their website. I used icomoon icons because I liked the tick and circle icons they have better and so that I could provide the icons so that this plugin worked right out the box without dependencies. Icomoon do offer custom hosted icon sets which you can use in the same way as the FontAwsome however this is slightly trickier than using FontAwsome so therefor I recommend using the FontAwsome method instead.
+[Icomoon](http://icomoon.io) is slightly trickier to set us as it requires downloading the fonts from their website. I used icomoon icons because I liked the tick and circle icons they have better and so that I could provide the icons so that this plugin worked right out the box without dependencies. Icomoon do offer custom hosted icon sets which you can use in the same way as the FontAwesome however this is slightly trickier than using FontAwesome so therefor I recommend using the FontAwesome method instead.
 
 To setup the icomoon icons do the following:
 
