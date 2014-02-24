@@ -19,8 +19,8 @@ This plugin uses custom icons provided by icomoon (icomoon.io) for its ticks and
 3. [Installation](#installation)
 4. [Customizing](#customizing)
 
-   [Adding Custom Styles](#adding-custom-styles)  
-   [Adding Custom Icons](#adding-custom-icons)  
+   [Custom Styles](#custom-styles)  
+   [Custom Icons](#custom-icons)  
 
 
 
@@ -49,7 +49,7 @@ Include the query.checkradios.min.css CSS in the head tag of your page
 ```html
 
 <!-- The main styles for the checkradios plugin to provide default styles -->
-<link rel="stylesheet" href="<PATH-TO-PLUGIN>/jquery-checkradios/css/jquery.checkradios.min.css" type="text/css"/>
+<link rel="stylesheet" href="<PATH-TO-PLUGIN>/jquery-checkradios/css/jquery.checkradios.min.css"/>
 
 ```
 
@@ -87,7 +87,7 @@ This should be the __outcome__:
 
 ##Customizing
 
-###Adding Custom Styles
+###Custom Styles
 
 You can add custom styles to the check boxes and radios by simply adding a class to the checkbox
 or radio input and targeting it within the css. All classes added to the input will be applied 
@@ -143,7 +143,7 @@ _**Note:** You can also customise the styles using the_ `.checkradios-checkbox` 
 
 
 
-###Adding Custom Icons
+###Custom Icons
 
 The jquery.checkradios plugin supports all platforms that use class based font icons such as [Icomoon](http://www.icomoon.io) and [FontAwsome](http://fortawesome.github.io/Font-Awesome/)
 
@@ -158,12 +158,49 @@ Include the css for FontAwsome using their CDN:
 ```html
 
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-<link rel="stylesheet" href="<PATH-TO-PLUGIN>/jquery-checkradios/css/jquery.checkradios.min.css" type="text/css"/>
+<link rel="stylesheet" href="<PATH-TO-PLUGIN>/jquery-checkradios/css/jquery.checkradios.min.css"/>
 
 ```
 
+#####html
 
+```html
 
+<input type="checkbox" class="checkboxes-and-radios" checked/>
+<input type="radio" class="checkboxes-and-radios" checked/>
+
+```
+
+#####Javascript
+
+Get the name of the icon you want to use from [FontAwsome](http://fortawesome.github.io/Font-Awesome/icons/) and add it when instantiating the plugin like this:
+
+```javascript
+
+$('.checkboxes-and-radios').checkradios({
+	
+    checkbox: {
+		
+                iconClass:'fa fa-check-circle'
+		
+    },
+		
+    radio: {
+		
+                iconClass:'fa fa-star'
+		
+    }
+	
+	
+});
+
+```
+
+_**Note:** Be sure to also add the "fa" FontAwsome class before the icon name you have chosen_
+
+This should be the __outcome__:
+
+![alt text](demo_assets/img/font_awsome_example.jpg?raw=true "Font Awsome Example")
 
 
 
