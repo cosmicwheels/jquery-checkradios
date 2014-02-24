@@ -19,8 +19,8 @@ This plugin uses custom icons provided by icomoon (icomoon.io) for its ticks and
 3. [Installation](#installation)
 4. [Customizing](#customizing)
 
- …[Adding Custom Styles](#adding-custom-styles)**
- …[Adding Custom Icons](#adding-custom-icons)**
+   [Adding Custom Styles](#adding-custom-styles)  
+   [Adding Custom Icons](#adding-custom-icons)  
 
 
 
