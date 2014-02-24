@@ -129,119 +129,130 @@ $(document).ready(function(){
 <body>
 
 
-
-
-<div class="section">
-<label>
-    <div class="label">Default Checkbox:</div>
-	<input type="checkbox" class="checkradios" checked/>
-</label>
-</div>
-
-<div class="section">
-<label>
-    <div class="label">Custom Styled Checkbox:</div>
-	<input type="checkbox" class="checkradios custom" checked/>
-</label>
-</div>
-
-
-<div class="section">
-<label>
-    <div class="label">Default Styled Radio:</div>
-	<input type="radio" class="checkradios" checked/>
-</label>
-</div>
-
-<div class="section">
-<label>
-    <div class="label">Default Styled Radio group:</div>
-	<input type="radio" name="group" class="checkradios" checked/>
-    <input type="radio" name="group" class="checkradios"/>
-    <input type="radio" name="group" class="checkradios"/>
+<div class="container">
     
-</label>
-</div>
-
-<div class="section">
-<label>
-    <div class="label">Custom Styled Radio:</div>
-	<input type="radio" class="checkradios custom" checked/>
-</label>
-</div>
-
-
-<div class="section">
-<label>
-    <div class="label">Default Styled Radio group:</div>
-	<input type="radio" name="group2" class="checkradios custom" checked/>
-    <input type="radio" name="group2" class="checkradios custom"/>
-    <input type="radio" name="group2" class="checkradios custom"/>
+    <div class="header">
+        <h2>jQuery.checkradios</h2>
+        <p>A lightweight jQuery Plugin that allows you to use CSS to style checkboxes and radios without using images.</p>
+    </div>
     
-</label>
-</div>
-
-
-
-<div class="section">
-<label>
-    <div class="label">Checkbox Custom Icons using fontawsome:</div>
-	<input type="checkbox" class="checkradios-custom-icons custom" checked/>
-</label>
-</div>
-
-
-<div class="section">
-<label>
-    <div class="label">Radios Custom Icons using fontawsome:</div>
-	<input type="radio" name="group4" class="checkradios-custom-icons custom" checked/>
-    <input type="radio" name="group4" class="checkradios-custom-icons custom"/>
-    <input type="radio" name="group4" class="checkradios-custom-icons custom"/>
     
-</label>
-</div>
-
-
-<div class="section">
-<label>
-    <div class="label">Checkbox Custom Icons Random using fontawsome:</div>
-	<input type="checkbox" class="checkradios-custom-icons-crazy custom" checked/>
-</label>
-</div>
-
-
-<div class="section">
-<label>
-    <div class="label">Radios Custom Icons Random using fontawsome:</div>
-	<input type="radio" name="group5" class="checkradios-custom-icons-crazy custom" checked/>
-    <input type="radio" name="group5" class="checkradios-custom-icons-crazy custom"/>
-    <input type="radio" name="group5" class="checkradios-custom-icons-crazy custom"/>
     
-</label>
-</div>
+    <div class="content-body">
 
-
-
-
-<div class="section">
-<label>
-    <div class="label">Radio Callback Examples: <span class="radio-status"></span></div>
-	<input type="radio" name="group3" class="radios-callback" checked/>
-    <input type="radio" name="group3" class="radios-callback"/>
-    <input type="radio" name="group3" class="radios-callback"/>
+        <div class="section">
+        <label>
+            <div class="label">Default Checkbox:</div>
+            <input type="checkbox" class="checkradios" checked/>
+        </label>
+        </div>
+        
+        <div class="section">
+        <label>
+            <div class="label">Custom Styled Checkbox:</div>
+            <input type="checkbox" class="checkradios custom" checked/>
+        </label>
+        </div>
+        
+        
+        <div class="section">
+        <label>
+            <div class="label">Default Styled Radio:</div>
+            <input type="radio" class="checkradios" checked/>
+        </label>
+        </div>
+        
+        <div class="section">
+        <label>
+            <div class="label">Default Styled Radio group:</div>
+            <input type="radio" name="group" class="checkradios" checked/>
+            <input type="radio" name="group" class="checkradios"/>
+            <input type="radio" name="group" class="checkradios"/>
+            
+        </label>
+        </div>
+        
+        <div class="section">
+        <label>
+            <div class="label">Custom Styled Radio:</div>
+            <input type="radio" class="checkradios custom" checked/>
+        </label>
+        </div>
+        
+        
+        <div class="section">
+        <label>
+            <div class="label">Default Styled Radio group:</div>
+            <input type="radio" name="group2" class="checkradios custom" checked/>
+            <input type="radio" name="group2" class="checkradios custom"/>
+            <input type="radio" name="group2" class="checkradios custom"/>
+            
+        </label>
+        </div>
+        
+        
+        
+        <div class="section">
+        <label>
+            <div class="label">Checkbox Custom Icons using fontawesome:</div>
+            <input type="checkbox" class="checkradios-custom-icons custom" checked/>
+        </label>
+        </div>
+        
+        
+        <div class="section">
+        <label>
+            <div class="label">Radios Custom Icons using fontawesome:</div>
+            <input type="radio" name="group4" class="checkradios-custom-icons custom" checked/>
+            <input type="radio" name="group4" class="checkradios-custom-icons custom"/>
+            <input type="radio" name="group4" class="checkradios-custom-icons custom"/>
+            
+        </label>
+        </div>
+        
+        
+        <div class="section">
+        <label>
+            <div class="label">Checkbox Custom Icons using fontawesome:</div>
+            <input type="checkbox" class="checkradios-custom-icons-crazy custom" checked/>
+        </label>
+        </div>
+        
+        
+        <div class="section">
+        <label>
+            <div class="label">Radios Custom Icons using fontawesome:</div>
+            <input type="radio" name="group5" class="checkradios-custom-icons-crazy custom" checked/>
+            <input type="radio" name="group5" class="checkradios-custom-icons-crazy custom"/>
+            <input type="radio" name="group5" class="checkradios-custom-icons-crazy custom"/>
+            
+        </label>
+        </div>
+        
+        
+        
+        
+        <div class="section">
+        <label>
+            <div class="label">Radio Callback Examples: <span class="radio-status"></span></div>
+            <input type="radio" name="group3" class="radios-callback" checked/>
+            <input type="radio" name="group3" class="radios-callback"/>
+            <input type="radio" name="group3" class="radios-callback"/>
+            
+        </label>
+        </div>
+        
+        <div class="section">
+        <label>
+            <div class="label">Checkbox Callback Examples: <span class="checkbox-status"></span></div>
+            <input type="checkbox" class="checkbox-callback" checked/>
+        </label>
+        </div>
     
-</label>
+    </div>
+
+
 </div>
-
-<div class="section">
-<label>
-    <div class="label">Checkbox Callback Examples: <span class="checkbox-status"></span></div>
-	<input type="checkbox" class="checkbox-callback" checked/>
-</label>
-</div>
-
-
-
 
 
 
