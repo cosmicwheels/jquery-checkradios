@@ -11,7 +11,7 @@ A lightweight jQuery Plugin that allows you to use CSS to style checkboxes and r
 
 This jQuery plugin was designed to allow you to fully customize checkboxes and radios without using standard images and with scalability in mind. Most plugins I have come across use images such as jpegs and pngs to add custom checkbox ticks and radio circles. This plugin instead uses vector based icons/fonts to add in the ticks and circles which allows far greater customisation as well as scalability and ultimately much greater control over the checkboxes and radios using css.
 
-This plugin uses custom icons provided by icomoon (icomoon.io) for its ticks and radios circles built in by default however it is also compatible with other font based icons platforms such as FontAwsome.
+This plugin uses custom icons provided by icomoon (icomoon.io) for its ticks and radios circles built in by default however it is also compatible with other font based icons platforms such as FontAwesome.
 
 
 ##Table of Contents
@@ -213,7 +213,7 @@ This should be the __outcome__:
 
 ####Using Icomoon Font Icons
 
-[Icomoon](http://icomoon.io) is slightly trickier to set us as it requires downloading the fonts from their website. I used icomoon icons because I liked the tick and circle icons they have better and so that I could provide the icons so that this plugin worked right out the box without dependencies. Icomoon do offer custom hosted icon sets which you can use in the same way as the FontAwesome however this is slightly trickier than using FontAwesome so therefor I recommend using the FontAwesome method instead.
+[Icomoon](http://icomoon.io) is slightly trickier to set up as it requires downloading the fonts from their website. I used icomoon icons because I liked the tick and circle icons they have better and so that I could provide the icons so that this plugin worked right out the box without dependencies. Icomoon do offer custom hosted icon sets which you can use in the same way as the FontAwesome however this is slightly trickier than using FontAwesome so therefore I recommend using the FontAwesome method instead.
 
 To setup the icomoon icons do the following:
 
