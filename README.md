@@ -196,11 +196,51 @@ $('.checkboxes-and-radios').checkradios({
 
 ```
 
-_**Note:** Be sure to also add the "fa" FontAwsome class before the icon name you have chosen_
+_**Note:** Be sure to also add the "fa" FontAwsome class before the icon name you have chosen._
 
 This should be the __outcome__:
 
 ![alt text](demo_assets/img/font_awsome_example.jpg?raw=true "Font Awsome Example")
+
+
+
+####Using Icomoon Font Icons
+
+[Icomoon](http://icomoon.io) is slightly trickier to set us as it requires downloading the fonts from their website. I used icomoon icons because I liked the tick and circle icons they have better and so that I could provide the icons so that this plugin worked right out the box without dependencies. Icomoon do offer custom hosted icon sets which you can use in the same way as the FontAwsome however this is slightly trickier than using FontAwsome so therefor I recommend using the FontAwsome method instead.
+
+To setup the icomoon icons do the following:
+
+1. First you will have to select the icons you wish to use from [Icomoon](http://icomoon.io/app/#/select).
+2. Once you have selected the icons you wish to use, download them and add the contents to your sites folder.
+3. Include the style.css file on your page.
+4. Then in your javascript do the following:
+
+
+```javascript
+
+$('.checkboxes-and-radios').checkradios({
+	
+    checkbox: {
+		
+                iconClass:'the-name-of-your-icomoon-class-for-checkboxes'
+		
+    },
+		
+    radio: {
+		
+                iconClass:'the-name-of-your-icomoon-class-for-radios'
+		
+    }
+	
+	
+});
+
+```
+
+_Alternatively you can copy the contents of the style.css provided by icomoon and instead paste it into the jquery.checkradios.css file, replacing the icomoon section at the top (Make sure to set the paths properly to the font files, if overriding the default fonts add your font files to css/fonts within the plugin folder), this would allow you to skip "Step 3" listed above. If choosing to copy and paste into the query.checkradios.css file if you change the names of your icons to `.icon-checkradios-checkmark:before` and `.icon-checkradios-circle:before` this will override the default font classes which will allow you to also skip "Step 4" listed above_
+
+
+
 
 
 
