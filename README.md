@@ -130,6 +130,15 @@ _**Note:** You can also customise the styles using the_ `.checkradios-checkbox` 
 
 ###Adding Custom Icons
 
+The jquery.checkradios plugin supports all platforms that use class based font icons such as [Icomoon](https://www.icomoon.io) and [FontAwsome](http://fortawesome.github.io/Font-Awesome/)
+
+
+####Using FontAwsome Font Icons
+
+
+
+
+
 
 
 
