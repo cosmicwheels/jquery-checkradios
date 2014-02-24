@@ -20,7 +20,8 @@ This plugin uses custom icons provided by icomoon (icomoon.io) for its ticks and
 4. [Customizing](#customizing)
 
    [Custom Styles](#custom-styles)  
-   [Custom Icons](#custom-icons)  
+   [Custom Icons (FontAwsome)](#using-fontawsome-font-icons)
+   [Custom Icons (Icomoon)](#using-icomoon-font-icons)  
 
 
 
