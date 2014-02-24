@@ -95,6 +95,8 @@ To add custom styling, create a css class like this:
 }
 
 ```
+_Note: Increasing and decreasing the font size is the best way to adjust the size of the checkboxes and radios_
+
 
 Then add the style to the inputs:
 
