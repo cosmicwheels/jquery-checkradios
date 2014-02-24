@@ -15,6 +15,11 @@ This plugin uses custom icons provided by icomoon (icomoon.io) for its ticks and
 
 
 1. [Installation](#installation)
+1. [Usage](#installation)
+1. [Installation](#usage)
+1. [Customizing](#customizing)
+...[Adding Custom Styles](#adding-custom-styles)
+...[Adding Custom Icons](#adding-custom-icons)
 
 
 
@@ -79,7 +84,7 @@ This should be the __outcome__:
 ![alt text](demo_assets/img/basic_example.jpg?raw=true "Basic Setup")
 
 
-##Customising
+##Customizing
 
 ###Adding Custom Styles
 
