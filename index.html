@@ -33,27 +33,9 @@ $(document).ready(function(){
 	
 	
 	
-	//Custom Icon Examples (fontawsome)
-	$('.checkradios-custom-icons').checkradios({
-	
-	    checkbox: {
-		
-		   iconClass:'fa fa-check'
-		
-		},
-		
-		radio: {
-		
-		   iconClass:'fa fa-circle'
-		
-		}
-	
-	
-	});
-	
 	
 	//Custom Icon Examples (fontawsome) Different Icons
-	$('.checkradios-custom-icons-crazy').checkradios({
+	$('.checkradios-fontawesome').checkradios({
 	
 	    checkbox: {
 		
@@ -73,37 +55,20 @@ $(document).ready(function(){
 	
 	
 	
-	//Callback examples
-	$('.radios-callback').checkradios({
-	
-	    onChange: function(checked, $element, $realElement){
-		
-		    if(checked){
-				
-				//Get checked index
-				var index = $realElement.index('.radios-callback');
-				
-				console.log(index);
-			}
-		
-		}
 	
 	
-	});
-	
-	
-	$('.checkbox-callback').checkradios({
+	$('#callback-checkbox').checkradios({
 	
 	    onChange: function(checked, $element, $realElement){
 		    
 			
 		   if(checked){
 			  
-		       $('.checkbox-status').html('Checked').css('color', 'green');
+		       $('.status').html('Checked').css('color', 'green');
 		   
 		   }else{
 		   
-		       $('.checkbox-status').html('Not Checked').css('color', 'red');
+		       $('.status').html('Not Checked').css('color', 'red');
 		   
 		   }
 		
@@ -132,7 +97,7 @@ $(document).ready(function(){
 <div class="container">
     
     <div class="header">
-        <h2>jQuery.checkradios</h2>
+        <h2><a href="https://github.com/cosmicwheels/jquery-checkradios" target="_blank">jQuery.checkradios</a></h2>
         <p>A lightweight jQuery Plugin that allows you to use CSS to style checkboxes and radios without using images.</p>
     </div>
     
@@ -141,113 +106,177 @@ $(document).ready(function(){
     <div class="content-body">
 
         <div class="section">
-        <label>
-            <div class="label">Default Checkbox:</div>
+        
+            <h3 class="section-title">Default Setup</h3>
+            
+            <div class="code-title">HTML:</div> 
+             
+             <pre class="code">
+&lt;input type="checkbox" class="checkradios" checked/&gt;
+&lt;input type="radio" class="checkradios" checked/&gt;
+             </pre>
+            
+            <div class="code-title">Javascript:</div>
+            <pre class="code">
+$('.checkradios').checkradios();
+            </pre>
+            
+            
+            <div class="label">Output:</div>
             <input type="checkbox" class="checkradios" checked/>
-        </label>
-        </div>
-        
-        <div class="section">
-        <label>
-            <div class="label">Custom Styled Checkbox:</div>
-            <input type="checkbox" class="checkradios custom" checked/>
-        </label>
-        </div>
-        
-        
-        <div class="section">
-        <label>
-            <div class="label">Default Styled Radio:</div>
             <input type="radio" class="checkradios" checked/>
-        </label>
         </div>
         
+        
+        
         <div class="section">
-        <label>
-            <div class="label">Default Styled Radio group:</div>
-            <input type="radio" name="group" class="checkradios" checked/>
-            <input type="radio" name="group" class="checkradios"/>
-            <input type="radio" name="group" class="checkradios"/>
+        
+            <h3 class="section-title">Custom Styles</h3>
             
-        </label>
-        </div>
-        
-        <div class="section">
-        <label>
-            <div class="label">Custom Styled Radio:</div>
+            <div class="code-title">HTML:</div> 
+             
+             <pre class="code">
+&lt;input type="checkbox" class="checkradios custom-style" checked/&gt;
+&lt;input type="radio" class="checkradios custom-style" checked/&gt;
+             </pre>
+             
+             <div class="code-title">CSS:</div> 
+             
+             <pre class="code">
+.custom-style{
+    
+    font-size:25px;
+    color:#FF0084;
+    border:2px solid#FF0084;
+    
+    -webkitbox-shadow:inset 0px 0.1em 0.1em rgba(0,0,0,0.3);
+    -moz-box-shadow:inset 0px 0.1em 0.1em rgba(0,0,0,0.3);
+    box-shadow:inset 0px 0.1em 0.1em rgba(0,0,0,0.3);
+	
+}
+             </pre>
+             
+            <div class="code-title">Javascript:</div>
+            <pre class="code">
+$('.checkradios').checkradios();
+            </pre>
+            
+            
+            <div class="label">Output:</div>
+            <input type="checkbox" class="checkradios custom" checked/>
             <input type="radio" class="checkradios custom" checked/>
-        </label>
         </div>
         
         
+        
+        
+        
+        
         <div class="section">
-        <label>
-            <div class="label">Default Styled Radio group:</div>
-            <input type="radio" name="group2" class="checkradios custom" checked/>
-            <input type="radio" name="group2" class="checkradios custom"/>
-            <input type="radio" name="group2" class="checkradios custom"/>
+        
+            <h3 class="section-title">Custom Icons (FontAwesome):</h3>
             
-        </label>
-        </div>
-        
-        
-        
-        <div class="section">
-        <label>
-            <div class="label">Checkbox Custom Icons using fontawesome:</div>
-            <input type="checkbox" class="checkradios-custom-icons custom" checked/>
-        </label>
-        </div>
-        
-        
-        <div class="section">
-        <label>
-            <div class="label">Radios Custom Icons using fontawesome:</div>
-            <input type="radio" name="group4" class="checkradios-custom-icons custom" checked/>
-            <input type="radio" name="group4" class="checkradios-custom-icons custom"/>
-            <input type="radio" name="group4" class="checkradios-custom-icons custom"/>
+            <div class="code-title">HTML:</div> 
+             
+             <pre class="code">
+&lt;input type="checkbox" class="checkradios custom-style" checked/&gt;
+&lt;input type="radio" class="checkradios custom-style" checked/&gt;
+             </pre>
+             
+             
+            <div class="code-title">Javascript</div>
+            <pre class="code">
+$('.checkradios').checkradios({
+	
+    checkbox: {
+    
+       iconClass:'fa fa-check-circle'
+    
+    },
+    
+    radio: {
+    
+       iconClass:'fa fa-star'
+    
+    }
+
+
+});
+            </pre>
             
-        </label>
-        </div>
-        
-        
-        <div class="section">
-        <label>
-            <div class="label">Checkbox Custom Icons using fontawesome:</div>
-            <input type="checkbox" class="checkradios-custom-icons-crazy custom" checked/>
-        </label>
-        </div>
-        
-        
-        <div class="section">
-        <label>
-            <div class="label">Radios Custom Icons using fontawesome:</div>
-            <input type="radio" name="group5" class="checkradios-custom-icons-crazy custom" checked/>
-            <input type="radio" name="group5" class="checkradios-custom-icons-crazy custom"/>
-            <input type="radio" name="group5" class="checkradios-custom-icons-crazy custom"/>
             
-        </label>
+            <div class="label">Output:</div>
+            <input type="checkbox" class="checkradios-fontawesome custom-style" checked/>
+            <input type="radio" class="checkradios-fontawesome custom-style" checked/>
         </div>
         
         
         
-        
         <div class="section">
-        <label>
-            <div class="label">Radio Callback Examples: <span class="radio-status"></span></div>
-            <input type="radio" name="group3" class="radios-callback" checked/>
-            <input type="radio" name="group3" class="radios-callback"/>
-            <input type="radio" name="group3" class="radios-callback"/>
+        
+            <h3 class="section-title">Callback Example:</h3>
             
-        </label>
+            <div class="code-title">HTML:</div> 
+             
+             <pre class="code">
+&lt;input id="callback-checkbox" type="checkbox" class="custom-style" checked/&gt;
+
+&lt;div class="status"&gt;Status will appear here&lt;/div&gt;
+             </pre>
+             
+             
+            <div class="code-title">Javascript</div>
+            <pre class="code">
+$('#callback-checkbox').checkradios({
+	
+    onChange: function(checked){
+    
+    
+        if(checked){
+          
+           $('.status').html('Checked').css('color', 'green');
+        
+        }else{
+        
+           $('.status').html('Not Checked').css('color', 'red');
+        
+        }
+    
+    
+    }
+
+
+});
+            </pre>
+            
+            
+            <div class="label">Output:</div>
+            <input id="callback-checkbox" type="checkbox" class="custom-style" checked/>
+            <div class="status">Status will appear here</div>
         </div>
         
+        
+        
+        
+        
         <div class="section">
-        <label>
-            <div class="label">Checkbox Callback Examples: <span class="checkbox-status"></span></div>
-            <input type="checkbox" class="checkbox-callback" checked/>
-        </label>
+        
+            <h3 class="section-title">Radio Group:</h3>
+            
+            
+            <div class="label">Output:</div>
+            <input name="radio-group" type="radio" class="checkradios custom-style" checked/>
+            <input name="radio-group" type="radio" class="checkradios custom-style" checked/>
+            <input name="radio-group" type="radio" class="checkradios custom-style" checked/>
+            <input name="radio-group" type="radio" class="checkradios custom-style" checked/>
+            <input name="radio-group" type="radio" class="checkradios custom-style" checked/>
+            
         </div>
+        
+        
+        
+        
+        
     
     </div>
 
@@ -255,7 +284,7 @@ $(document).ready(function(){
 </div>
 
 
-
+<footer>Github: <a href="https://github.com/cosmicwheels/" target="_blank">CosmicWheels</a></footer>
 
 
 </body>

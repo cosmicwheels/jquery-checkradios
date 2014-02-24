@@ -304,6 +304,7 @@ By supplying an object as the options the following options are available:
 
 ##License
 
-Licenced under GPL v3 [View License](LICENSE)
+   Code copyright Cosmic Solutions 2014  
+   Licenced under GPL v3 [View License](LICENSE)  
 
 
