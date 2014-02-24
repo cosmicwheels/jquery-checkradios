@@ -4,6 +4,9 @@ jquery.checkradios
 A jQuery Plugin that allows you to use CSS to style checkboxes and radios without using images.
 
 
+![alt text](demo_assets/img/example_header.jpg?raw=true "Examples")
+
+
 ##Introduction
 
 This jQuery plugin was designed to allow you to fully customize checkboxes and radios without using standard images and with scalability in mind. Most plugins I have come across use images such as jpegs and pngs to add custom checkbox ticks and radio circles. This plugin instead uses vector based icons/fonts to add in the ticks and circles which allows far greater customisation as well as scalability and ultimately much greater control over the checkboxes and radios using css.
