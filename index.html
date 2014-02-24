@@ -28,37 +28,322 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+          <h1>
+<a name="jquerycheckradios" class="anchor" href="#jquerycheckradios"><span class="octicon octicon-link"></span></a>jquery.checkradios</h1>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p>A lightweight jQuery Plugin that allows you to use CSS to style checkboxes and radios without using images.</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+<p><img src="demo_assets/img/example_header.jpg?raw=true" alt="alt text" title="Examples"></p>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<h2>
+<a name="introduction" class="anchor" href="#introduction"><span class="octicon octicon-link"></span></a>Introduction</h2>
+
+<p>This jQuery plugin was designed to allow you to fully customize checkboxes and radios without using standard images and with scalability in mind. Most plugins I have come across use images such as jpegs and pngs to add custom checkbox ticks and radio circles. This plugin instead uses vector based icons/fonts to add in the ticks and circles which allows far greater customisation as well as scalability and ultimately much greater control over the checkboxes and radios using css.</p>
+
+<p>This plugin uses custom icons provided by icomoon (icomoon.io) for its ticks and radios circles built in by default however it is also compatible with other font based icons platforms such as FontAwesome.</p>
+
+<h2>
+<a name="table-of-contents" class="anchor" href="#table-of-contents"><span class="octicon octicon-link"></span></a>Table of Contents</h2>
+
+<ol>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#installation">Installation</a></li>
+<li>
+<p><a href="#customizing">Customizing</a></p>
+
+<p><a href="#custom-styles">Custom Styles</a><br><a href="#using-fontawesome-font-icons">Custom Icons (FontAwesome)</a><br><a href="#using-icomoon-font-icons">Custom Icons (Icomoon)</a></p>
+</li>
+<li><a href="#settings">Settings</a></li>
+<li><a href="#credits">Credits</a></li>
+<li><a href="#license">License</a></li>
+</ol><h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<h5>
+<a name="javascript" class="anchor" href="#javascript"><span class="octicon octicon-link"></span></a>Javascript</h5>
+
+<p>Include jquery.checkradios.min.js anywhere after jQuery, ideally at the bottom of the body tag.</p>
+
+<div class="highlight highlight-html"><pre>
+<span class="c">&lt;!-- jQuery - Required to use the jQuery plugin (Obviously) --&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+
+<span class="c">&lt;!-- Checkradios plugin --&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"&lt;PATH-TO-PLUGIN&gt;/jquery-checkradios/js/jquery.checkradios.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+
+</pre></div>
+
+<h5>
+<a name="css" class="anchor" href="#css"><span class="octicon octicon-link"></span></a>CSS</h5>
+
+<p>Include the query.checkradios.min.css CSS in the head tag of your page</p>
+
+<div class="highlight highlight-html"><pre>
+<span class="c">&lt;!-- The main styles for the checkradios plugin to provide default styles --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"&lt;PATH-TO-PLUGIN&gt;/jquery-checkradios/css/jquery.checkradios.min.css"</span><span class="nt">/&gt;</span>
+
+</pre></div>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
 
 <h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<a name="basic-setup" class="anchor" href="#basic-setup"><span class="octicon octicon-link"></span></a>Basic Setup</h3>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<p>To get started simply add the following to your <strong>Javascript</strong>:</p>
+
+<div class="highlight highlight-javascript"><pre>
+<span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'.checkradios'</span><span class="p">).</span><span class="nx">checkradios</span><span class="p">();</span>
+
+<span class="p">});</span>
+
+</pre></div>
+
+<p>Then add your checkboxes and/or radios within your <strong>HTML</strong>:</p>
+
+<div class="highlight highlight-html"><pre>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"checkradios"</span> <span class="na">checked</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">class=</span><span class="s">"checkradios"</span> <span class="na">checked</span><span class="nt">/&gt;</span>
+
+</pre></div>
+
+<p>This should be the <strong>outcome</strong>:</p>
+
+<p><img src="demo_assets/img/basic_example.jpg?raw=true" alt="alt text" title="Basic Setup"></p>
+
+<h2>
+<a name="customizing" class="anchor" href="#customizing"><span class="octicon octicon-link"></span></a>Customizing</h2>
 
 <h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<a name="custom-styles" class="anchor" href="#custom-styles"><span class="octicon octicon-link"></span></a>Custom Styles</h3>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<p>You can add custom styles to the check boxes and radios by simply adding a class to the checkbox
+or radio input and targeting it within the css. All classes added to the input will be applied 
+to the container that the plugin creates to display the new customised checkbox and radio.</p>
+
+<p>To add custom styling, create a css class like this:</p>
+
+<div class="highlight highlight-css"><pre>
+<span class="nc">.custom-style</span><span class="p">{</span>
+
+    <span class="k">font-size</span><span class="o">:</span><span class="m">50px</span><span class="p">;</span>
+    <span class="k">color</span><span class="o">:</span><span class="m">#6CF</span><span class="p">;</span>
+    <span class="k">border</span><span class="o">:</span><span class="m">2px</span> <span class="k">solid</span> <span class="m">#6CF</span><span class="p">;</span>
+
+    <span class="o">-</span><span class="n">webkitbox</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span><span class="k">inset</span> <span class="m">0px</span> <span class="m">0.1em</span> <span class="m">0.1em</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">.</span><span class="m">3</span><span class="p">);</span>
+    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span><span class="k">inset</span> <span class="m">0px</span> <span class="m">0.1em</span> <span class="m">0.1em</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">.</span><span class="m">3</span><span class="p">);</span>
+    <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span><span class="k">inset</span> <span class="m">0px</span> <span class="m">0.1em</span> <span class="m">0.1em</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">.</span><span class="m">3</span><span class="p">);</span>
+
+<span class="p">}</span>
+
+</pre></div>
+
+<p><em><strong>Note:</strong> Increasing and decreasing the font size is the best way to adjust the size</em></p>
+
+<p>Then add the style to the inputs:</p>
+
+<div class="highlight highlight-html"><pre>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"checkradios custom-style"</span> <span class="na">checked</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">class=</span><span class="s">"checkradios custom-style"</span> <span class="na">checked</span><span class="nt">/&gt;</span>
+
+</pre></div>
+
+<p>When you instantiate the plugin:</p>
+
+<div class="highlight highlight-javascript"><pre>
+<span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'.checkradios'</span><span class="p">).</span><span class="nx">checkradios</span><span class="p">();</span>
+
+<span class="p">});</span>
+
+</pre></div>
+
+<p>This should be the <strong>outcome</strong>:</p>
+
+<p><img src="demo_assets/img/custom_example.jpg?raw=true" alt="alt text" title="Basic Setup"></p>
+
+<p><em><strong>Note:</strong> You can also customise the styles using the</em> <code>.checkradios-checkbox</code> <em>and</em> <code>.checkradios-radio</code> <em>classes in the main jquery.checkradios.css file. From the jquery.checkradios.css css file you can also target the tick and the circle icons from the</em> <code>.icon-checkradios-checkmark:before</code> <em>and</em> <code>.icon-checkradios-circle:before</code> <em>classes.</em></p>
 
 <h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<a name="custom-icons" class="anchor" href="#custom-icons"><span class="octicon octicon-link"></span></a>Custom Icons</h3>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p>The jquery.checkradios plugin supports all platforms that use class based font icons such as <a href="http://www.icomoon.io">Icomoon</a> and <a href="http://fortawesome.github.io/Font-Awesome/">FontAwesome</a></p>
+
+<h4>
+<a name="using-fontawesome-font-icons" class="anchor" href="#using-fontawesome-font-icons"><span class="octicon octicon-link"></span></a>Using FontAwesome Font Icons</h4>
+
+<h5>
+<a name="css-1" class="anchor" href="#css-1"><span class="octicon octicon-link"></span></a>CSS</h5>
+
+<p>Include the css for FontAwesome using their CDN:</p>
+
+<div class="highlight highlight-html"><pre>
+<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"&lt;PATH-TO-PLUGIN&gt;/jquery-checkradios/css/jquery.checkradios.min.css"</span><span class="nt">/&gt;</span>
+
+</pre></div>
+
+<h5>
+<a name="html" class="anchor" href="#html"><span class="octicon octicon-link"></span></a>html</h5>
+
+<div class="highlight highlight-html"><pre>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"checkboxes-and-radios"</span> <span class="na">checked</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">class=</span><span class="s">"checkboxes-and-radios"</span> <span class="na">checked</span><span class="nt">/&gt;</span>
+
+</pre></div>
+
+<h5>
+<a name="javascript-1" class="anchor" href="#javascript-1"><span class="octicon octicon-link"></span></a>Javascript</h5>
+
+<p>Get the name of the icon you want to use from <a href="http://fortawesome.github.io/Font-Awesome/icons/">FontAwesome</a> and add it when instantiating the plugin like this:</p>
+
+<div class="highlight highlight-javascript"><pre>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'.checkboxes-and-radios'</span><span class="p">).</span><span class="nx">checkradios</span><span class="p">({</span>
+
+    <span class="nx">checkbox</span><span class="o">:</span> <span class="p">{</span>
+
+                <span class="nx">iconClass</span><span class="o">:</span><span class="s1">'fa fa-check-circle'</span>
+
+    <span class="p">},</span>
+
+    <span class="nx">radio</span><span class="o">:</span> <span class="p">{</span>
+
+                <span class="nx">iconClass</span><span class="o">:</span><span class="s1">'fa fa-star'</span>
+
+    <span class="p">}</span>
+
+
+<span class="p">});</span>
+
+</pre></div>
+
+<p><em><strong>Note:</strong> Be sure to also add the "fa" FontAwesome class before the icon name you have chosen.</em></p>
+
+<p>This should be the <strong>outcome</strong>:</p>
+
+<p><img src="demo_assets/img/font_awesome_example.jpg?raw=true" alt="alt text" title="Font Awesome Example"></p>
+
+<h4>
+<a name="using-icomoon-font-icons" class="anchor" href="#using-icomoon-font-icons"><span class="octicon octicon-link"></span></a>Using Icomoon Font Icons</h4>
+
+<p><a href="http://icomoon.io">Icomoon</a> is slightly trickier to set up as it requires downloading the fonts from their website. I used icomoon icons because I liked the tick and circle icons they have better and so that I could provide the icons so that this plugin worked right out the box without dependencies. Icomoon do offer custom hosted icon sets which you can use in the same way as the FontAwesome however this is slightly trickier than using FontAwesome so therefore I recommend using the FontAwesome method instead.</p>
+
+<p>To setup the icomoon icons do the following:</p>
+
+<ol>
+<li>First you will have to select the icons you wish to use from <a href="http://icomoon.io/app/#/select">Icomoon</a>.</li>
+<li>Once you have selected the icons you wish to use, download them and add the contents to your sites folder.</li>
+<li>Include the style.css file on your page.</li>
+<li>Then in your javascript do the following:</li>
+</ol><div class="highlight highlight-javascript"><pre>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'.checkboxes-and-radios'</span><span class="p">).</span><span class="nx">checkradios</span><span class="p">({</span>
+
+    <span class="nx">checkbox</span><span class="o">:</span> <span class="p">{</span>
+
+                <span class="nx">iconClass</span><span class="o">:</span><span class="s1">'the-name-of-your-icomoon-class-for-checkboxes'</span>
+
+    <span class="p">},</span>
+
+    <span class="nx">radio</span><span class="o">:</span> <span class="p">{</span>
+
+                <span class="nx">iconClass</span><span class="o">:</span><span class="s1">'the-name-of-your-icomoon-class-for-radios'</span>
+
+    <span class="p">}</span>
+
+
+<span class="p">});</span>
+
+</pre></div>
+
+<p><em>Alternatively you can copy the contents of the style.css provided by icomoon and instead paste it into the jquery.checkradios.css file, replacing the icomoon section at the top (Make sure to set the paths properly to the font files, if overriding the default fonts add your font files to css/fonts within the plugin folder), this would allow you to skip "Step 3" listed above. If choosing to copy and paste into the query.checkradios.css file if you change the names of your icons to</em> <code>.icon-checkradios-checkmark:before</code> <em>and</em> <code>.icon-checkradios-circle:before</code> <em>this will override the default font classes which will allow you to also skip "Step 4" listed above</em></p>
+
+<h2>
+<a name="callbacks" class="anchor" href="#callbacks"><span class="octicon octicon-link"></span></a>Callbacks</h2>
+
+<p><code>onchange(bool, jQuery object, jQuery object)</code></p>
+
+<p>The callback <code>onChange</code> can be triggered each time a checkbox is changed by doing the following:</p>
+
+<div class="highlight highlight-javascript"><pre>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'.checkbox-callback'</span><span class="p">).</span><span class="nx">checkradios</span><span class="p">({</span>
+
+    <span class="nx">onChange</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">checked</span><span class="p">,</span> <span class="nx">$element</span><span class="p">,</span> <span class="nx">$realElement</span><span class="p">){</span>
+
+
+        <span class="k">if</span><span class="p">(</span><span class="nx">checked</span><span class="p">){</span>
+
+            <span class="nx">alert</span><span class="p">(</span><span class="s1">'Item was checked'</span><span class="p">);</span>
+
+        <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+
+            <span class="nx">alert</span><span class="p">(</span><span class="s1">'Item was unchecked'</span><span class="p">);</span>
+
+        <span class="p">}</span>
+
+    <span class="p">}</span>
+
+
+<span class="p">});</span>
+
+</pre></div>
+
+<p><em>The <code>on change</code> callback will return the items current state <code>checked</code> which is a boolean value where true = checked and false = unchecked along with the check radios container</em> (<code>$element</code>) <em>and the real checkbox element</em> (<code>$realElement</code>)</p>
+
+<h2>
+<a name="settings" class="anchor" href="#settings"><span class="octicon octicon-link"></span></a>Settings</h2>
 
 <h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<a name="options" class="anchor" href="#options"><span class="octicon octicon-link"></span></a>Options</h3>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<p>By supplying an object as the options the following options are available:</p>
+
+<table>
+<thead><tr>
+<th>Option</th>
+<th>Description</th>
+<th>Example Input</th>
+<th>Input Type</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>checkbox</td>
+<td>Object that contains settings for checkboxes</td>
+<td>{}</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>checkbox.iconClass</td>
+<td>The Class selector for the icon you want to use for checkboxes</td>
+<td>fa fa-check</td>
+<td>String</td>
+</tr>
+<tr>
+<td>radio</td>
+<td>Object that contains settings for checkboxes</td>
+<td>{}</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>radio.iconClass</td>
+<td>The Class selector for the icon you want to use for radios</td>
+<td>fa fa-circle</td>
+<td>String</td>
+</tr>
+</tbody>
+</table><h2>
+<a name="credits" class="anchor" href="#credits"><span class="octicon octicon-link"></span></a>Credits</h2>
+
+<p><strong>Author:</strong> Chris McGuckin <a href="https://github.com/cosmicwheels/">cosmicwheels</a><br><strong>Icons:</strong> Icons provided by <a href="http://icomoon.io">icomoon.io</a>  </p>
+
+<h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>Code Copyright 2014 Chris McGuckin<br>
+   Licenced under GPL v3 <a href="LICENSE">View License</a>  </p>
         </section>
 
         <aside id="sidebar">
