@@ -299,7 +299,7 @@ By supplying an object as the options the following options are available:
    **Icons:** Icons provided by [icomoon.io](http://icomoon.io)  
 
 
-##Licence
+##License
 
 Licenced under GPL v3 [View License](LICENSE)
 
