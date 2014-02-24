@@ -124,7 +124,7 @@ This should be the __outcome__:
 ![alt text](demo_assets/img/custom_example.jpg?raw=true "Basic Setup")
 
 
-_**Note:** You can also customise the styles using the `.checkradios-checkbox` and `.checkradios-radio` classes in the main jquery.checkradios.css file. From the jquery.checkradios.css css file you can also target the tick and the circle icons from the `.icon-checkradios-checkmark:before` and `.icon-checkradios-circle:before` classes._
+_**Note:** You can also customise the styles using the_ `.checkradios-checkbox` _and_ `.checkradios-radio` _classes in the main jquery.checkradios.css file. From the jquery.checkradios.css css file you can also target the tick and the circle icons from the_ `.icon-checkradios-checkmark:before` _and_ `.icon-checkradios-circle:before` _classes._
 
 
 
