@@ -70,9 +70,32 @@ This should be the __outcome__:
 ![alt text](demo_assets/img/basic_example.jpg?raw=true "Basic Setup")
 
 
-###Adding Custom Styling
+##Customising
 
+###Adding Custom Styles
 
+You can add custom styles to the check boxes and radios by simply adding a class to the checkbox
+or radio input and targeting it within the css. All classes added to the input will be applied 
+to the container that the plugin creates to display the new customised checkbox and radio.
+
+To add custom styling, create a css class like this:
+
+```css
+
+.custom{
+    
+    font-size:50px;
+    color:#6CF;
+    border:2px solid #6CF;
+	
+    -webkitbox-shadow:inset 0px 0.1em 0.1em rgba(0,0,0,0.3);
+    -moz-box-shadow:inset 0px 0.1em 0.1em rgba(0,0,0,0.3);
+    box-shadow:inset 0px 0.1em 0.1em rgba(0,0,0,0.3);
+	
+
+}
+
+```
 
 
 
