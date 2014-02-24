@@ -1,4 +1,4 @@
-jquery-checkradios
+jquery.checkradios
 ==================
 
 A jQuery Plugin that allows you to use CSS to style checkboxes and radios without using images.
@@ -70,7 +70,7 @@ This should be the __outcome__:
 ![alt text](demo_assets/img/basic_example.jpg?raw=true "Basic Setup")
 
 
-
+###Adding Custom Styling
 
 
 
