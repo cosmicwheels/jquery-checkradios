@@ -119,4 +119,4 @@ $(document).ready(function(){
 
 This should be the __outcome__:
 
-![alt text](demo_assets/img/basic_example.jpg?raw=true "Basic Setup")
+![alt text](demo_assets/img/custom_example.jpg?raw=true "Basic Setup")
