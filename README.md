@@ -95,7 +95,7 @@ To add custom styling, create a css class like this:
 }
 
 ```
-_**Note:** Increasing and decreasing the font size is the best way to adjust the size of the checkboxes and radios_
+_**Note:** Increasing and decreasing the font size is the best way to adjust the size_
 
 
 Then add the style to the inputs:
@@ -122,3 +122,14 @@ $(document).ready(function(){
 This should be the __outcome__:
 
 ![alt text](demo_assets/img/custom_example.jpg?raw=true "Basic Setup")
+
+
+You can also customise the styles using the `.checkradios-checkbox` and `.checkradios-radioclasses` in the main jquery.checkradios.css file. From the jquery.checkradios.css css file you can also target the tick and the circle icons from the `.icon-checkradios-checkmark:before` and `.icon-checkradios-circle:before` classes.
+
+
+
+
+
+
+
+
