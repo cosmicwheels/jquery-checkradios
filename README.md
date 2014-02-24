@@ -14,7 +14,7 @@ This plugin uses custom icons provided by icomoon (icomoon.io) for its ticks and
 ##Installation
 
 
-###Javascript
+#####Javascript
 Include jquery.checkradios.min.js anywhere after jQuery, ideally at the bottom of the body tag.
 
 ```html
@@ -27,7 +27,7 @@ Include jquery.checkradios.min.js anywhere after jQuery, ideally at the bottom o
 
 ```
 
-###CSS
+#####CSS
 
 Include the query.checkradios.min.css CSS in the head tag of your page
 
@@ -130,7 +130,7 @@ _**Note:** You can also customise the styles using the_ `.checkradios-checkbox` 
 
 ###Adding Custom Icons
 
-The jquery.checkradios plugin supports all platforms that use class based font icons such as [Icomoon](https://www.icomoon.io) and [FontAwsome](http://fortawesome.github.io/Font-Awesome/)
+The jquery.checkradios plugin supports all platforms that use class based font icons such as [Icomoon](http://www.icomoon.io) and [FontAwsome](http://fortawesome.github.io/Font-Awesome/)
 
 
 ####Using FontAwsome Font Icons
