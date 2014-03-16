@@ -13,7 +13,6 @@ This jQuery plugin was designed to allow you to fully customize checkboxes and r
 
 This plugin uses custom icons provided by icomoon (icomoon.io) for its ticks and radios circles built in by default however it is also compatible with other font based icons platforms such as FontAwesome.
 
-[View Demo](https://rawgithub.com/cosmicwheels/jquery-checkradios/master/index.html)
 
 
 ##Table of Contents
