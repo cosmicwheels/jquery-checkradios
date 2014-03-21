@@ -74,12 +74,10 @@
 					//Wrap the input
 					var $item = $checkbox.wrap('<div class="checkradios-checkbox ' +classes+ '"/>');
 					
-					
-					//Hide the input
-					$item.hide();
-					
 					//Get the new checkbox
 					var $holder = $item.parent();
+					
+					
 					
 					
 					//Check if box is checked
@@ -94,11 +92,66 @@
 					}
 					
 					
+					
+					//Add keyboard support
+					$checkbox.keypress(function(e){
+					    
+						var key = e.keyCode;
+						console.log(key);
+						//On enter/return or space
+						if((key === 0) || (key == 13) || (key == 32)){
+						
+						    
+							$holder.click();
+						
+						
+						}
+					
+					});
+					
+					
+					//Add tabbing suppot
+					$checkbox.on({
+					
+					    focusin: function(){
+						
+						    
+							$holder.addClass('focus');
+						
+						
+						},
+						
+						focusout: function(){
+						
+						    
+							$holder.removeClass('focus');
+						
+						
+						}
+					
+					
+					});
+					
+					$holder.mousedown(function(){
+					    
+						setTimeout(function(){
+							
+							//Add focus
+							$checkbox.focus();
+						
+						},10);
+					
+					});
+					
+					
+					
+					
 					//Disable usual click functionality
 					$checkbox.click(function(e){
 					
 					    e.stopPropagation();
 						e.preventDefault();
+						
 					
 					});
 					
@@ -106,7 +159,7 @@
 					$holder.click(function(){
 						
 						
-					
+					    //Add check
 						if($item.is(':checked')){
 						
 							THIS.checkboxDisable($item);
@@ -127,6 +180,12 @@
 						
 					
 					});
+					
+					
+					
+					
+					
+					
 					
 					
 				
@@ -151,12 +210,9 @@
 					var $item = $radio.wrap('<div class="checkradios-radio ' +classes+ '"/>');
 					
 					
-					//Hide the input
-					$item.hide();
-					
-					
 					//Get the new checkbox
 					var $holder = $item.parent();
+					
 					
 					
 					//Check if box is checked
@@ -171,6 +227,66 @@
 					}
 					
 					
+					//Add tabbing suppot
+					$radio.on({
+					
+					    focusin: function(){
+						
+						    
+							$holder.addClass('focus');
+							THIS.radioEnable($item);
+							
+							//Get group Name
+							var radio_name = $item.attr('name');
+							
+							var $group = $('input[name=' + radio_name + ']');
+							
+							//Set checked/unchecked for each element in group
+							$group.each(function(){
+							
+								if($(this).is(':checked')){
+								
+									THIS.radioEnable($(this));
+									
+									//Callback
+									settings.onChange(true, $(this).parent(), $(this));
+								
+								}else{
+									
+									THIS.radioDisable($(this));
+									
+									//Callback
+									settings.onChange(false, $(this).parent(), $(this));
+								
+								}
+							
+							});
+						
+						
+						},
+						
+						focusout: function(){
+						
+						    
+							$holder.removeClass('focus');
+						
+						
+						}
+					
+					
+					});
+					
+					$holder.click(function(){
+					    
+						//Add focus
+						$radio.focus();
+						
+					
+					});
+					
+					
+					
+					
 			        //Disable usual click functionality
 					$radio.click(function(e){
 					
@@ -179,53 +295,7 @@
 					
 					});
 							
-					//On button click
-					$holder.click(function(e){
-						
-						e.stopPropagation();
-						e.preventDefault();
 					
-						if($item.is(':checked')){
-						
-							THIS.radioDisable($item);
-						
-						}else{
-							
-							THIS.radioEnable($item);
-						
-						}
-						
-						
-						//Get group Name
-						var radio_name = $item.attr('name');
-						
-						var $group = $('input[name=' + radio_name + ']');
-						
-						//Set checked/unchecked for each element in group
-						$group.each(function(){
-						
-							if($(this).is(':checked')){
-							
-								THIS.radioEnable($(this));
-								
-								//Callback
-							    settings.onChange(true, $(this).parent(), $(this));
-							
-							}else{
-								
-								THIS.radioDisable($(this));
-								
-								//Callback
-							    settings.onChange(false, $(this).parent(), $(this));
-							
-							}
-						
-						});
-					
-					
-						return false;
-					
-					});
 					
 					
 					
