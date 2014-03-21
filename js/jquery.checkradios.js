@@ -36,8 +36,6 @@
 			
 			    iconClass:'icon-checkradios-checkmark'
 			
-			
-			
 			},
 			
 			radio: {
