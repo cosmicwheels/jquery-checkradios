@@ -19,6 +19,8 @@
 
 .custom.focus{
 
+	-webkit-box-shadow:inset 0 0.1em 0.1em rgba(0,0,0,0.3), 0px 0px 3px rgba(255,0,132,0.5);
+	-moz-box-shadow:inset 0 0.1em 0.1em rgba(0,0,0,0.3), 0px 0px 3px rgba(255,0,132,0.5);
 	box-shadow:inset 0 0.1em 0.1em rgba(0,0,0,0.3), 0px 0px 3px rgba(255,0,132,0.5);
 	border-color:#FF0084;
 
@@ -39,6 +41,15 @@
 }
 
 
+
+.custom-style.focus{
+
+	-webkit-box-shadow:inset 0 0.1em 0.1em rgba(0,0,0,0.3), 0px 0px 3px rgba(255,0,132,0.5);
+	-moz-box-shadow:inset 0 0.1em 0.1em rgba(0,0,0,0.3), 0px 0px 3px rgba(255,0,132,0.5);
+	box-shadow:inset 0 0.1em 0.1em rgba(0,0,0,0.3), 0px 0px 3px rgba(255,0,132,0.5);
+	border-color:#FF0084;
+
+}
 
 
 
