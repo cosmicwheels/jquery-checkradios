@@ -30,8 +30,9 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+
 /*Icon Placeholder*/
-.checkradios-checkbox:before,.checkradios-radio:before{
+.checkradios-checkbox:after,.checkradios-radio:after{
     
 	content:"";
 	height:100%;

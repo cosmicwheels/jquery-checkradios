@@ -97,9 +97,9 @@
 					$checkbox.keypress(function(e){
 					    
 						var key = e.keyCode;
-						console.log(key);
+						
 						//On enter/return or space
-						if((key === 0) || (key == 13) || (key == 32)){
+						if((key < 1) || (key == 13) || (key == 32)){
 						
 						    
 							$holder.click();
