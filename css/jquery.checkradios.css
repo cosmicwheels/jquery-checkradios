@@ -53,7 +53,7 @@
     
 	font-size:16px;
 	
-	
+	position:relative;
     display:inline-block;
 	vertical-align:bottom;
 	text-align:center;
@@ -64,6 +64,12 @@
 	height:1em;
 	cursor:pointer;
 	padding:0.2em;
+	
+	-moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+	
+
 
 }
 
