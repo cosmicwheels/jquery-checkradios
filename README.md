@@ -27,6 +27,7 @@ This plugin uses custom icons provided by icomoon (icomoon.io) for its ticks and
    [Custom Icons (FontAwesome)](#using-fontawesome-font-icons)  
    [Custom Icons (Icomoon)](#using-icomoon-font-icons)
 5. [Settings](#settings)
+6. [Support](#support)
 6. [Credits](#credits)
 7. [License](#license)
 
@@ -301,7 +302,7 @@ By supplying an object as the options the following options are available:
 
    Please help fuel future web development projects and to maintain this one by buying me a coffee.
    
-   [![PayPayl donate button](http://img.shields.io/paypal/donate.png?color=yellow)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VAKPFLHQB6ZM4 "Donate once-off to this project using Paypal")
+   [![PayPal donate button](http://img.shields.io/paypal/donate.png?color=ff69b4)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VAKPFLHQB6ZM4 "Buy me a coffee")
 
 
 ##Credits
