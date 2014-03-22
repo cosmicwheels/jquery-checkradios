@@ -297,6 +297,13 @@ By supplying an object as the options the following options are available:
 
 
 
+##Support
+
+   Please help fuel future web development projects and to maintain this one by buying me a coffee.
+   
+   [![PayPayl donate button](http://img.shields.io/paypal/donate.png?color=yellow)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VAKPFLHQB6ZM4 "Donate once-off to this project using Paypal")
+
+
 ##Credits
 
    **Author:** Chris McGuckin [cosmicwheels](https://github.com/cosmicwheels/)  
