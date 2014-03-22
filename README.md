@@ -27,7 +27,7 @@ This plugin uses custom icons provided by icomoon (icomoon.io) for its ticks and
    [Custom Icons (FontAwesome)](#using-fontawesome-font-icons)  
    [Custom Icons (Icomoon)](#using-icomoon-font-icons)
 5. [Settings](#settings)
-6. [Support](#support)
+6. [Donate](#donate)
 6. [Credits](#credits)
 7. [License](#license)
 
@@ -298,7 +298,7 @@ By supplying an object as the options the following options are available:
 
 
 
-##Support
+##Donate
 
    Please help fuel future web development projects and to maintain this one by buying me a coffee.
    
