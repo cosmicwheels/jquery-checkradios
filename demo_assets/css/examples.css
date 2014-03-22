@@ -140,6 +140,11 @@ body{
 }
 
 
+a:hover{
+
+    text-decoration:none;
+
+}
 
 .label{
 
@@ -220,12 +225,93 @@ footer{
 
 }
 
+footer span{
+
+    margin-right:2em;
+
+}
+
+footer span:last-child{
+
+    margin-right:0;
+
+}
+
 
 footer a{
 
     color:#FF0084;
 
 }
+
+.copyright{
+
+    margin-top:2em;
+	color:#CCC;
+
+}
+
+
+
+/*Bottom Section*/
+.buy-coffee{
+
+    padding-top:100px;
+	padding-bottom:100px;
+	border-bottom:none;
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+	box-shadow:none;
+
+}
+
+.coffee-holder{
+
+    text-align:center;
+
+}
+
+.coffee-link{
+
+    text-align:center;
+
+}
+
+.coffee-link a, .coffee-link a:hover, .coffee-link a:active{
+
+    font-family: 'Lobster', cursive;
+	font-size:40px;
+	color:#915B3E;
+	text-decoration:none;
+
+}
+
+.bottom-txt{
+
+    text-align:center;
+	padding:0px 20% 0 20%;
+	line-height:1.3em;
+
+}
+
+.bottom-txt a{
+
+    color:#FF0084;
+
+}
+
+.thanks{
+
+    font-weight:bold;
+
+}
+
+
+
+
+
+
+
 
 
 
