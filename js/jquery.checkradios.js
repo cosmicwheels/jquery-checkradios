@@ -122,9 +122,18 @@
 						},
 						
 						focusout: function(){
-						
 						    
-							$holder.removeClass('focus');
+							var $this = $(this);
+							
+						    setTimeout(function(){
+								
+								if(!$this.is(':focus')){
+									
+									$holder.removeClass('focus');
+									
+								}
+							
+							}, 10);
 						
 						
 						}
@@ -267,8 +276,18 @@
 						
 						focusout: function(){
 						
-						    
-							$holder.removeClass('focus');
+							var $this = $(this);
+							
+						    setTimeout(function(){
+								
+								
+								if(!$this.is(':focus')){
+									
+									$holder.removeClass('focus');
+									
+								}
+							
+							}, 10);
 						
 						
 						}
