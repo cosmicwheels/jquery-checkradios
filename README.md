@@ -302,7 +302,7 @@ By supplying an object as the options the following options are available:
 
    Please help fuel future web development projects and to maintain this one by buying me a coffee.
    
-   [![PayPal donate button](http://img.shields.io/paypal/donate.png?color=ff69b4)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VAKPFLHQB6ZM4 "Buy me a coffee")
+   [![PayPal donate button](http://img.shields.io/paypal/donate.png?color=blue)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VAKPFLHQB6ZM4 "Buy me a coffee")
 
 
 ##Credits
