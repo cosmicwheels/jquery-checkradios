@@ -155,12 +155,7 @@
 						}, 10);
 
 					});
-<<<<<<< HEAD
-					
-					
-					
-					
-=======
+
 
 
 					//Disable usual click functionality
@@ -172,7 +167,6 @@
 					});
 
 
->>>>>>> pr/3
 					//On button click
 					$holder.click(function () {
 
@@ -248,15 +242,15 @@
 
 							//Get group Name
 							var radio_name = $item.attr('name');
-<<<<<<< HEAD
+
 							
 							var $group = $('input[name="' + radio_name + '"]');
 							
-=======
+
 
 							var $group = $('input[name="' + radio_name + '"]');
 
->>>>>>> pr/3
+
 							//Set checked/unchecked for each element in group
 							$group.each(function () {
 								
@@ -301,7 +295,7 @@
 						$radio.focus();
 						
 					});
-<<<<<<< HEAD
+
 					
 					
 					
@@ -313,7 +307,7 @@
 					
 					
 				
-=======
+
 
 					//Disable usual click functionality
 					$radio.click(function (e) {
@@ -323,7 +317,7 @@
 						
 					});
 
->>>>>>> pr/3
+
 				}
 			},
 
