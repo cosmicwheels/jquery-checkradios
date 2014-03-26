@@ -46,6 +46,7 @@
 
 			},
 
+      emitEvents: false,
 
 			onChange: function(checked, $element, $realElement){}
 
@@ -342,7 +343,9 @@
 
 				$checkbox.parent().addClass(settings.checkbox.iconClass);
 				$checkbox.parent().addClass('checked');
-				$checkbox.prop('checked', true);
+				  $checkbox.prop('checked', true);
+        if (settings.emitEvents)
+            $checkbox.trigger('change');
 
 
 
@@ -354,7 +357,9 @@
 
 				$checkbox.parent().removeClass(settings.checkbox.iconClass);
 				$checkbox.parent().addClass('unchecked');
-				$checkbox.prop('checked', false);
+				  $checkbox.prop('checked', false);
+        if (settings.emitEvents)
+            $checkbox.trigger('change');
 
 
 
@@ -368,7 +373,9 @@
 
 			    $radio.parent().addClass(settings.radio.iconClass);
 				$radio.parent().addClass('checked');
-				$radio.prop('checked', true);
+				  $radio.prop('checked', true);
+        if (settings.emitEvents)
+            $radio.trigger('change');
 
 
 
@@ -380,7 +387,9 @@
 
 			    $radio.parent().removeClass(settings.radio.iconClass);
 				$radio.parent().addClass('unchecked');
-				$radio.prop('checked', false);
+        $radio.prop('checked', false);
+        if (settings.emitEvents)
+            $radio.trigger('change');
 
 
 

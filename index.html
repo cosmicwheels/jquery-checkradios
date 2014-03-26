@@ -83,7 +83,15 @@ $(document).ready(function(){
 	});
 
 
-
+	$('#event-checkbox').change(function(e) {
+          if($('#event-checkbox').prop('checked'))
+            $('.event-status').html('Checked').css('color', 'green');
+          else
+            $('.event-status').html('Not Checked').css('color', 'red');
+        });
+	$('#event-checkbox').checkradios({
+          emitEvents: true
+        });
 
 });
 
@@ -261,6 +269,38 @@ $('#callback-checkbox').checkradios({
         </div>
 
 
+        <div class="section">
+
+            <h3 class="section-title">Original Event Emission:</h3>
+
+            <div class="code-title">HTML:</div>
+
+             <pre class="code">
+&lt;input id="event-checkbox" type="checkbox" class="custom-style" checked/&gt;
+
+&lt;div class="event-status"&gt;Status will appear here&lt;/div&gt;
+             </pre>
+
+
+            <div class="code-title">Javascript</div>
+            <pre class="code">
+$('#event-checkbox').change(function(e) {
+  if($('#event-checkbox').prop('checked'))
+    $('.event-status').html('Checked').css('color', 'green');
+  else
+    $('.event-status').html('Not Checked').css('color', 'red');
+});
+
+$('#event-checkbox').checkradios({
+  emitEvents: true
+});
+            </pre>
+
+
+            <div class="label">Output:</div>
+            <input id="event-checkbox" type="checkbox" class="custom-style" checked/>
+            <div class="event-status">Status will appear here</div>
+        </div>
 
 
 
