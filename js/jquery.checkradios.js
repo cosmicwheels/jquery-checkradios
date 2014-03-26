@@ -155,15 +155,6 @@
 					
 					
 					
-					//Disable usual click functionality
-					$checkbox.click(function(e){
-					
-					    e.stopPropagation();
-						e.preventDefault();
-						
-					
-					});
-					
 					//On button click
 					$holder.click(function(){
 						
@@ -305,15 +296,6 @@
 					
 					
 					
-					
-					
-			        //Disable usual click functionality
-					$radio.click(function(e){
-					
-					    e.stopPropagation();
-						e.preventDefault();
-					
-					});
 							
 					
 					
@@ -419,7 +401,7 @@
 		//Loop through elements
 		$elements.each(function(i, val){
 		    
-			$this = $(this);
+			var $this = $(this);
 			
 			//Check for checkbox
 			if($this.is("input[type=checkbox]")){
