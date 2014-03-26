@@ -306,6 +306,7 @@
 					
 					
 					
+					
 			        //Disable usual click functionality
 					$radio.click(function(e){
 					
@@ -342,11 +343,15 @@
 				
 				$checkbox.parent().addClass(settings.checkbox.iconClass);
 				$checkbox.parent().addClass('checked');
-				$checkbox.prop('checked', true);
 				
-							
+				//Check the box if the element is unchecked
+				if(!$checkbox.is(':checked')){
+					
+					$checkbox.prop('checked', true).trigger('change');
 				
-			
+				}
+				
+					
 			
 			},
 			
@@ -354,7 +359,13 @@
 				
 				$checkbox.parent().removeClass(settings.checkbox.iconClass);
 				$checkbox.parent().addClass('unchecked');
-				$checkbox.prop('checked', false);
+				
+				//Uncheck the box if the element is checked
+				if($checkbox.is(':checked')){
+					
+				    $checkbox.prop('checked', false).trigger('change');
+				
+				}
 				
 			
 			
@@ -368,7 +379,13 @@
 				
 			    $radio.parent().addClass(settings.radio.iconClass);
 				$radio.parent().addClass('checked');
-				$radio.prop('checked', true);
+				
+				//Check the box if the element is unchecked
+				if(!$radio.is(':checked')){
+					
+					$radio.prop('checked', true).trigger('change');
+				
+				}
 				
 			
 			
@@ -380,7 +397,13 @@
 				
 			    $radio.parent().removeClass(settings.radio.iconClass);
 				$radio.parent().addClass('unchecked');
-				$radio.prop('checked', false);
+				
+				//Uncheck the box if the element is checked
+				if($radio.is(':checked')){
+					
+					$radio.prop('checked', false).trigger('change');
+				
+				}
 				
 			
 			
