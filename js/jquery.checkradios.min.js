@@ -1,6 +1,6 @@
 /*
 	CHECKRADIOS - jQuery plugin to allow custom styling of checkboxes
-	by Chris McGuckin
+	by Chris McGuckin (https://github.com/cosmicwheels)
 	
 	
 	License: This program is free software; you can redistribute it and/or
