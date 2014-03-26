@@ -239,7 +239,7 @@
 							//Get group Name
 							var radio_name = $item.attr('name');
 							
-							var $group = $('input[name=' + radio_name + ']');
+							var $group = $('input[name="' + radio_name + '"]');
 							
 							//Set checked/unchecked for each element in group
 							$group.each(function(){
