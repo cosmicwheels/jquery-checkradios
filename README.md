@@ -308,7 +308,12 @@ By supplying an object as the options the following options are available:
 ##Credits
 
    **Author:** Chris McGuckin [cosmicwheels](https://github.com/cosmicwheels/)  
-   **Icons:** Icons provided by [icomoon.io](http://icomoon.io)  
+   **Icons:** Icons provided by [icomoon.io](http://icomoon.io) 
+ 
+   **Support** [Stephan Richter](https://github.com/strichter)
+
+   Thanks to Stephan for pointing out and helping to add the triggering of events to help further mimic the checkboxes and radios as well as providing other
+   important bug fixes.
 
 
 ##License
