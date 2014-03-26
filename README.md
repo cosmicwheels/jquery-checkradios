@@ -319,6 +319,6 @@ By supplying an object as the options the following options are available:
 ##License
 
    Code Copyright 2014 Chris McGuckin  
-   Licenced under GPL v3 [View License](LICENSE)  
+   Licensed under the MIT License [View License](LICENSE)  
 
 
