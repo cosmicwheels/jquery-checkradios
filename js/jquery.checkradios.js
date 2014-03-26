@@ -157,7 +157,6 @@
 					});
 
 
-
 					//Disable usual click functionality
 					$checkbox.click(function (e) {
 
@@ -243,13 +242,7 @@
 							//Get group Name
 							var radio_name = $item.attr('name');
 
-							
 							var $group = $('input[name="' + radio_name + '"]');
-							
-
-
-							var $group = $('input[name="' + radio_name + '"]');
-
 
 							//Set checked/unchecked for each element in group
 							$group.each(function () {
@@ -296,19 +289,6 @@
 						
 					});
 
-					
-					
-					
-							
-					
-					
-					
-					
-					
-					
-				
-
-
 					//Disable usual click functionality
 					$radio.click(function (e) {
 						
@@ -316,7 +296,6 @@
 						e.preventDefault();
 						
 					});
-
 
 				}
 			},
@@ -330,40 +309,17 @@
 
 				$checkbox.parent().addClass(settings.checkbox.iconClass);
 				$checkbox.parent().addClass('checked');
-<<<<<<< HEAD
-				
-				//Check the box if the element is unchecked
-				if(!$checkbox.is(':checked')){
-					
-					$checkbox.prop('checked', true).trigger('change');
-				
-				}
-				
-					
-			
-=======
 				$checkbox.prop('checked', true).trigger('change');
 				
 					
->>>>>>> pr/3
 			},
 
 			checkboxDisable: function ($checkbox) {
 				
 				$checkbox.parent().removeClass(settings.checkbox.iconClass);
 				$checkbox.parent().addClass('unchecked');
-<<<<<<< HEAD
-				
-				//Uncheck the box if the element is checked
-				if($checkbox.is(':checked')){
-					
-				    $checkbox.prop('checked', false).trigger('change');
-				
-				}
-=======
 				$checkbox.prop('checked', false).trigger('change');
 				
->>>>>>> pr/3
 				
 			},
 
@@ -374,17 +330,7 @@
 
 				$radio.parent().addClass(settings.radio.iconClass);
 				$radio.parent().addClass('checked');
-<<<<<<< HEAD
-				
-				//Check the box if the element is unchecked
-				if(!$radio.is(':checked')){
-					
-					$radio.prop('checked', true).trigger('change');
-				
-				}
-=======
 				$radio.prop('checked', true).trigger('change');
->>>>>>> pr/3
 				
 				
 					
@@ -395,34 +341,17 @@
 				$radio.parent().removeClass('checked');
 				$radio.parent().removeClass(settings.radio.iconClass);
 				$radio.parent().addClass('unchecked');
-<<<<<<< HEAD
-				
-				//Uncheck the box if the element is checked
-				if($radio.is(':checked')){
-					
-					$radio.prop('checked', false).trigger('change');
-				
-				}
-=======
 				$radio.prop('checked', false).trigger('change');
->>>>>>> pr/3
 				
 				
 			}
 		};
 
 		//Loop through elements
-<<<<<<< HEAD
-		$elements.each(function(i, val){
-		    
-			var $this = $(this);
-			
-=======
 		$elements.each(function (i, val) {
 
 			var $this = $(this);
 
->>>>>>> pr/3
 			//Check for checkbox
 			if ($this.is("input[type=checkbox]")) {
 				
