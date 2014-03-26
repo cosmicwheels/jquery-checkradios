@@ -29,8 +29,8 @@
 	
 	Stephan Richter (https://github.com/strichter)
 	
-	Thanks to Stephan for pointing out and helping to add the triggering of change 
-	events to help further mimic the checkboxes and radios as well as providing other
+	Thanks to Stephan for pointing out and helping to add the triggering of events 
+	to help further mimic the checkboxes and radios as well as providing other
 	important bug fixes.
 	
 	---------------------------------------------------------------------------------
