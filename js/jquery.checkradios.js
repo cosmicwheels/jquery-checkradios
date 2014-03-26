@@ -217,7 +217,7 @@
 
         $checkbox.parent().addClass(settings.checkbox.iconClass);
         $checkbox.parent().addClass('checked');
-          $checkbox.prop('checked', true);
+        $checkbox.prop('checked', true);
         if (settings.emitEvents)
             $checkbox.trigger('change');
       },
@@ -225,7 +225,7 @@
       checkboxDisable: function($checkbox) {
         $checkbox.parent().removeClass(settings.checkbox.iconClass);
         $checkbox.parent().addClass('unchecked');
-          $checkbox.prop('checked', false);
+        $checkbox.prop('checked', false);
         if (settings.emitEvents)
             $checkbox.trigger('change');
       },
