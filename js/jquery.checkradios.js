@@ -51,6 +51,9 @@
 
           //Get the elements classes
           var classes = $checkbox.attr('class');
+          if (classes === undefined) {
+            classes = '';
+          }
 
           //Wrap the input
           var $item = $checkbox.wrap(
@@ -136,6 +139,9 @@
 
           //Get the elements classes
           var classes = $radio.attr('class');
+          if (classes === undefined) {
+            classes = '';
+          }
 
           //Wrap the input
           var $item = $radio.wrap(
