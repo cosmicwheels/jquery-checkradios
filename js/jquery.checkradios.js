@@ -254,7 +254,7 @@
     //Loop through elements
     $elements.each(function(i, val){
 
-      $this = $(this);
+      var $this = $(this);
 
       //Check for checkbox
       if ($this.is("input[type=checkbox]")) {
