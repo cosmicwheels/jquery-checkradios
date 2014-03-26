@@ -33,56 +33,56 @@
 $(document).ready(function(){
 
 
-    //Default 
+    //Default
 	$('.checkradios').checkradios();
-	
-	
-	
-	
+
+
+
+
 	//Custom Icon Examples (fontawsome) Different Icons
 	$('.checkradios-fontawesome').checkradios({
-	
+
 	    checkbox: {
-		
+
 		   iconClass:'fa fa-check-circle'
-		
+
 		},
-		
+
 		radio: {
-		
+
 		   iconClass:'fa fa-star'
-		
+
 		}
-	
-	
+
+
 	});
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
 	$('#callback-checkbox').checkradios({
-	
+
 	    onChange: function(checked, $element, $realElement){
-		    
-			
+
+
 		   if(checked){
-			  
+
 		       $('.status').html('Checked').css('color', 'green');
-		   
+
 		   }else{
-		   
+
 		       $('.status').html('Not Checked').css('color', 'red');
-		   
+
 		   }
-		
+
 		}
-	
-	
+
+
 	});
-	
-	
+
+
 
 
 });
@@ -100,189 +100,189 @@ $(document).ready(function(){
 
 
 <div class="container">
-    
+
     <div class="header">
         <h2><a href="https://github.com/cosmicwheels/jquery-checkradios" target="_blank">jQuery.checkradios</a></h2>
         <p>A lightweight jQuery Plugin that allows you to use CSS to style checkboxes and radios without using images.</p>
     </div>
-    
-    
-    
+
+
+
     <div class="content-body">
 
         <div class="section">
-        
+
             <h3 class="section-title">Default Setup</h3>
-            
-            <div class="code-title">HTML:</div> 
-             
+
+            <div class="code-title">HTML:</div>
+
              <pre class="code">
 &lt;input type="checkbox" class="checkradios" checked/&gt;
 &lt;input type="radio" class="checkradios" checked/&gt;
              </pre>
-            
+
             <div class="code-title">Javascript:</div>
             <pre class="code">
 $('.checkradios').checkradios();
             </pre>
-            
-            
+
+
             <div class="label">Output:</div>
             <input type="checkbox" class="checkradios" checked/>
             <input type="radio" class="checkradios" checked/>
         </div>
-        
-        
-        
+
+
+
         <div class="section">
-        
+
             <h3 class="section-title">Custom Styles</h3>
-            
-            <div class="code-title">HTML:</div> 
-             
+
+            <div class="code-title">HTML:</div>
+
              <pre class="code">
 &lt;input type="checkbox" class="checkradios custom-style" checked/&gt;
 &lt;input type="radio" class="checkradios custom-style" checked/&gt;
              </pre>
-             
-             <div class="code-title">CSS:</div> 
-             
+
+             <div class="code-title">CSS:</div>
+
              <pre class="code">
 .custom-style{
-    
+
     font-size:25px;
     color:#FF0084;
     border:2px solid#FF0084;
-    
+
     -webkitbox-shadow:inset 0px 0.1em 0.1em rgba(0,0,0,0.3);
     -moz-box-shadow:inset 0px 0.1em 0.1em rgba(0,0,0,0.3);
     box-shadow:inset 0px 0.1em 0.1em rgba(0,0,0,0.3);
-	
+
 }
              </pre>
-             
+
             <div class="code-title">Javascript:</div>
             <pre class="code">
 $('.checkradios').checkradios();
             </pre>
-            
-            
+
+
             <div class="label">Output:</div>
             <input type="checkbox" class="checkradios custom" checked/>
             <input type="radio" class="checkradios custom" checked/>
         </div>
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
         <div class="section">
-        
+
             <h3 class="section-title">Custom Icons (FontAwesome):</h3>
-            
-            <div class="code-title">HTML:</div> 
-             
+
+            <div class="code-title">HTML:</div>
+
              <pre class="code">
 &lt;input type="checkbox" class="checkradios custom-style" checked/&gt;
 &lt;input type="radio" class="checkradios custom-style" checked/&gt;
              </pre>
-             
-             
+
+
             <div class="code-title">Javascript</div>
             <pre class="code">
 $('.checkradios').checkradios({
-	
+
     checkbox: {
-    
+
        iconClass:'fa fa-check-circle'
-    
+
     },
-    
+
     radio: {
-    
+
        iconClass:'fa fa-star'
-    
+
     }
 
 
 });
             </pre>
-            
-            
+
+
             <div class="label">Output:</div>
             <input type="checkbox" class="checkradios-fontawesome custom-style" checked/>
             <input type="radio" class="checkradios-fontawesome custom-style" checked/>
         </div>
-        
-        
-        
+
+
+
         <div class="section">
-        
+
             <h3 class="section-title">Callback Example:</h3>
-            
-            <div class="code-title">HTML:</div> 
-             
+
+            <div class="code-title">HTML:</div>
+
              <pre class="code">
 &lt;input id="callback-checkbox" type="checkbox" class="custom-style" checked/&gt;
 
 &lt;div class="status"&gt;Status will appear here&lt;/div&gt;
              </pre>
-             
-             
+
+
             <div class="code-title">Javascript</div>
             <pre class="code">
 $('#callback-checkbox').checkradios({
-	
+
     onChange: function(checked){
-    
-    
+
+
         if(checked){
-          
+
            $('.status').html('Checked').css('color', 'green');
-        
+
         }else{
-        
+
            $('.status').html('Not Checked').css('color', 'red');
-        
+
         }
-    
-    
+
+
     }
 
 
 });
             </pre>
-            
-            
+
+
             <div class="label">Output:</div>
             <input id="callback-checkbox" type="checkbox" class="custom-style" checked/>
             <div class="status">Status will appear here</div>
         </div>
-        
-        
-        
-        
-        
+
+
+
+
+
         <div class="section">
-        
+
             <h3 class="section-title">Radio Group:</h3>
-            
-            
+
+
             <div class="label">Output:</div>
             <input name="radio-group" type="radio" class="checkradios custom-style" checked/>
             <input name="radio-group" type="radio" class="checkradios custom-style" checked/>
             <input name="radio-group" type="radio" class="checkradios custom-style" checked/>
             <input name="radio-group" type="radio" class="checkradios custom-style" checked/>
             <input name="radio-group" type="radio" class="checkradios custom-style" checked/>
-            
+
         </div>
-        
-        
-        
-        
+
+
+
+
         <div class="section buy-coffee">
-        
+
             <div class="coffee-holder">
             	<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VAKPFLHQB6ZM4" target="_blank">
                     <img src="demo_assets/img/coffee.png" width="100" height="122" alt="Coffee">
@@ -292,17 +292,17 @@ $('#callback-checkbox').checkradios({
                 <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VAKPFLHQB6ZM4" target="_blank">Buy Me a Coffee</a>
             </div>
             <p class="bottom-txt">
-            If this plugin has helped you or saved you time, please consider buying me a coffee to help fuel 
-            further web development projects and to maintain this one. You can 
+            If this plugin has helped you or saved you time, please consider buying me a coffee to help fuel
+            further web development projects and to maintain this one. You can
             <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VAKPFLHQB6ZM4" target="_blank">Donate Here</a>
             </p>
             <p class="bottom-txt thanks">Thank You</p>
         </div>
-        
-        
-        
-        
-    
+
+
+
+
+
     </div>
 
 
@@ -314,7 +314,7 @@ $('#callback-checkbox').checkradios({
         <span>Github: <a href="https://github.com/cosmicwheels/" target="_blank">CosmicWheels</a></span>
         <span>Project Home: <a href="https://github.com/cosmicwheels/jquery-checkradios" target="_blank">Checkradios</a></span>
     </div>
-    
+
     <div class="copyright">&copy; cosmicwheels - All Rights Reserved 2014</div>
 </footer>
 
