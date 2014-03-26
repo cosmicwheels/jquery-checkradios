@@ -12,12 +12,30 @@
 	GNU General Public License for more details.
 	
 	
-	
 	Credits:
+	---------------------------------------------------------------------------------
 	
 	icomoon (http://icomoon.io/)
 	
-	Please refer to icomoon.io for the license regarding their icons.
+	Please refer to the icomoon website for the license regarding their icons.
+	
+	---------------------------------------------------------------------------------
+	
+	Fontawesome (http://fortawesome.github.io/Font-Awesome/)
+	
+	Please refer to the fontawesome website for the license regarding their icons.
+	
+	---------------------------------------------------------------------------------
+	
+	Stephan Richter (https://github.com/strichter)
+	
+	Thanks to Stephan for pointing out and helping to add the triggering of change 
+	events to help further mimic the checkboxes and radios as well as providing other
+	important bug fixes.
+	
+	---------------------------------------------------------------------------------
+	---------------------------------------------------------------------------------
+	
 
 */
 (function ($) {
@@ -356,18 +374,3 @@
 	};
 
 }(jQuery));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
