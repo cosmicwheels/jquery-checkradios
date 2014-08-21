@@ -6,7 +6,7 @@
 
 */
 @font-face {
-	font-family: 'icomoon';
+	font-family: 'checkradios-icons';
 	src:url('icons/icomoon.eot?-8aafzo');
 	src:url('icons/icomoon.eot?#iefix-8aafzo') format('embedded-opentype'),
 		url('icons/icomoon.woff?-8aafzo') format('woff'),
@@ -17,7 +17,7 @@
 }
 
 .icon-checkradios-checkmark, .icon-checkradios-circle{
-	font-family: 'icomoon';
+	font-family: 'checkradios-icons';
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
