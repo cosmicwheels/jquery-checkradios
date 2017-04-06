@@ -307,8 +307,9 @@ By supplying an object as the options the following options are available:
 
 ##Credits
 
-   **Author:** Chris McGuckin [cosmicwheels](https://github.com/cosmicwheels/)  
-   **Company:** Cosmic Solutions [cosmicsolutions.co.uk](http://cosmicsolutions.co.uk/) 
+   **Author:** Chris McGuckin [cosmicwheels](https://github.com/cosmicwheels/)
+   **Company:** Cosmic Solutions [cosmicsolutions.co.uk](http://cosmicsolutions.co.uk/)
+   
    **Icons:** Icons provided by [icomoon.io](http://icomoon.io) 
  
    **Support:** [Stephan Richter](https://github.com/strichter)
