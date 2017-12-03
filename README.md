@@ -15,7 +15,7 @@ This plugin uses custom icons provided by icomoon (icomoon.io) for its ticks and
 
 [View Demo](http://rawgithub.com/cosmicwheels/jquery-checkradios/master/index.html)
 
-##Table of Contents
+## Table of Contents
 
 
 1. [Installation](#installation)
@@ -35,10 +35,10 @@ This plugin uses custom icons provided by icomoon (icomoon.io) for its ticks and
 
 
 
-##Installation
+## Installation
 
 
-#####Javascript
+##### Javascript
 Include jquery.checkradios.min.js anywhere after jQuery, ideally at the bottom of the body tag.
 
 ```html
@@ -51,7 +51,7 @@ Include jquery.checkradios.min.js anywhere after jQuery, ideally at the bottom o
 
 ```
 
-#####CSS
+##### CSS
 
 Include the query.checkradios.min.css CSS in the head tag of your page
 
@@ -64,9 +64,9 @@ Include the query.checkradios.min.css CSS in the head tag of your page
 
 
 
-##Usage
+## Usage
 
-###Basic Setup
+### Basic Setup
 
 To get started simply add the following to your __Javascript__:
 
@@ -94,9 +94,9 @@ This should be the __outcome__:
 ![alt text](demo_assets/img/basic_example.jpg?raw=true "Basic Setup")
 
 
-##Customizing
+## Customizing
 
-###Custom Styles
+### Custom Styles
 
 You can add custom styles to the check boxes and radios by simply adding a class to the checkbox
 or radio input and targeting it within the css. All classes added to the input will be applied 
@@ -152,15 +152,15 @@ _**Note:** You can also customise the styles using the_ `.checkradios-checkbox` 
 
 
 
-###Custom Icons
+### Custom Icons
 
 The jquery.checkradios plugin supports all platforms that use class based font icons such as [Icomoon](http://www.icomoon.io) and [FontAwesome](http://fortawesome.github.io/Font-Awesome/)
 
 
-####Using FontAwesome Font Icons
+#### Using FontAwesome Font Icons
 
 
-#####CSS
+##### CSS
 
 Include the css for FontAwesome using their CDN:
 
@@ -171,7 +171,7 @@ Include the css for FontAwesome using their CDN:
 
 ```
 
-#####html
+##### html
 
 ```html
 
@@ -180,7 +180,7 @@ Include the css for FontAwesome using their CDN:
 
 ```
 
-#####Javascript
+##### Javascript
 
 Get the name of the icon you want to use from [FontAwesome](http://fortawesome.github.io/Font-Awesome/icons/) and add it when instantiating the plugin like this:
 
@@ -213,7 +213,7 @@ This should be the __outcome__:
 
 
 
-####Using Icomoon Font Icons
+#### Using Icomoon Font Icons
 
 [Icomoon](http://icomoon.io) is slightly trickier to set up as it requires downloading the fonts from their website. I used icomoon icons because I liked the tick and circle icons they have better and so that I could provide the icons so that this plugin worked right out the box without dependencies. Icomoon do offer custom hosted icon sets which you can use in the same way as the FontAwesome however this is slightly trickier than using FontAwesome so therefore I recommend using the FontAwesome method instead.
 
@@ -250,7 +250,7 @@ _Alternatively you can copy the contents of the style.css provided by icomoon an
 
 
 
-##Callbacks
+## Callbacks
 
 `onchange(bool, jQuery object, jQuery object)`
 
@@ -283,9 +283,9 @@ $('.checkbox-callback').checkradios({
 _The `on change` callback will return the items current state `checked` which is a boolean value where true = checked and false = unchecked along with the check radios container_ (`$element`) _and the real checkbox element_ (`$realElement`)
 
 
-##Settings
+## Settings
 
-###Options
+### Options
 By supplying an object as the options the following options are available:
 
 
@@ -298,14 +298,14 @@ By supplying an object as the options the following options are available:
 
 
 
-##Donate
+## Donate
 
    Please help fuel future web development projects and to maintain this one by buying me a coffee.
    
    [![PayPal donate button](http://img.shields.io/paypal/donate.png?color=blue)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VAKPFLHQB6ZM4 "Buy me a coffee")
 
 
-##Credits
+## Credits
 
    **Author:** Chris McGuckin [cosmicwheels](https://github.com/cosmicwheels/)
    
@@ -319,9 +319,9 @@ By supplying an object as the options the following options are available:
    important bug fixes.
 
 
-##License
+## License
 
-   Code Copyright 2014 Chris McGuckin  
+   Code Copyright 2017 Chris McGuckin  
    Licensed under the MIT License [View License](LICENSE)  
 
 
